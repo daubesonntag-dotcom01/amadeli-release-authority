@@ -12,5 +12,14 @@
     "record-approval": "success"
   },
   "t15_guard_run_id": 36627514112,
-  "status": "APPROVED_FOR_MERGE"
+  "status": "MERGED",
+  "merge_commit_sha": "3485ee96fe0ea67411d074d38b919947d73344df",
+  "post_merge_checks": {
+    "T15 Integration Smoke": "success",
+    "T15 Main-to-Integration Sync Guard": "success",
+    "T15 CI Observability Stack": "success"
+  },
+  "integration_smoke_run_id": 36627756993,
+  "main_sync_guard_run_id": 36627756862,
+  "observability_stack_run_id": 36627756807
 }
