@@ -2,8 +2,8 @@
   "schema": "amadeli.integration-authority.v1",
   "source_repo": "daubesonntag-dotcom01/amadeli-os-canonical",
   "branch": "t15-integration",
-  "approved_sha": "016d93bbdb6c612919dbaa9d86df1c4b6132724e",
-  "previous_canonical_sha": "40fce9eb31ded8f3a5676fec8f08a3a6a9d4eece",
-  "promoted_via": "authority/recoveries/pr-34.json",
+  "approved_sha": "3485ee96fe0ea67411d074d38b919947d73344df",
+  "previous_canonical_sha": "016d93bbdb6c612919dbaa9d86df1c4b6132724e",
+  "promoted_candidate": "authority/candidates/pr-35.json",
   "status": "CANONICAL"
 }
