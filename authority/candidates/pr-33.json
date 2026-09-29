@@ -12,5 +12,7 @@
     "record-approval": "success"
   },
   "t15_guard_run_id": 36624516328,
-  "status": "APPROVED_FOR_MERGE"
+  "status": "MERGED",
+  "merge_commit_sha": "e222c48b356fc9a6cb9c12c4763e3b85ebe549ba",
+  "recovery_pr": 34
 }
