@@ -1,0 +1,16 @@
+{
+  "schema": "amadeli.integration-candidate.v1",
+  "source_repo": "daubesonntag-dotcom01/amadeli-os-canonical",
+  "source_pr": 35,
+  "source_pr_url": "https://github.com/daubesonntag-dotcom01/amadeli-os-canonical/pull/35",
+  "base_branch": "t15-integration",
+  "base_sha": "016d93bbdb6c612919dbaa9d86df1c4b6132724e",
+  "head_branch": "t15-d-slo-alerting-v2",
+  "head_sha": "be60aa400928bf116d2c37a62089a4b852cd1cf2",
+  "required_checks": {
+    "T15 data-driven PR policy and evidence": "success",
+    "record-approval": "success"
+  },
+  "t15_guard_run_id": 36627514112,
+  "status": "APPROVED_FOR_MERGE"
+}
