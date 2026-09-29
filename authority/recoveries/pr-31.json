@@ -1,0 +1,24 @@
+{
+  "schema": "amadeli.integration-recovery.v1",
+  "source_repo": "daubesonntag-dotcom01/amadeli-os-canonical",
+  "source_pr": 31,
+  "source_pr_url": "https://github.com/daubesonntag-dotcom01/amadeli-os-canonical/pull/31",
+  "base_branch": "t15-integration",
+  "canonical_anchor_sha": "bdfcc5d2afc54fe22de59b61f4ab773ceadc6da2",
+  "base_sha": "f3743c48029c729d5a8181bf9225f6a52c011a27",
+  "head_sha": "279dac0e8ae248427a0c4f3534d5b6b9a258b19f",
+  "merge_commit_sha": "194bd670ecf8814d8254dc0b0ad937240f68b881",
+  "required_checks": {
+    "T15 data-driven PR policy and evidence": "success",
+    "record-approval": "success"
+  },
+  "t15_guard_run_id": 36617829157,
+  "record_approval_run_id": 36617817914,
+  "post_merge_checks": {
+    "T15 Integration Smoke": "success",
+    "T15 Main-to-Integration Sync Guard": "success"
+  },
+  "integration_smoke_run_id": 36617977422,
+  "main_sync_guard_run_id": 36617977870,
+  "status": "RECOVERED"
+}
