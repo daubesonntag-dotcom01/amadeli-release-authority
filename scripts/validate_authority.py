@@ -33,11 +33,13 @@ if previous is not None:
     assert previous != current["approved_sha"]
 
 seen_prs: set[int] = set()
+candidate_rows: dict[str, dict] = {}
 
 candidates = AUTH / "candidates"
 if candidates.exists():
     for path in sorted(candidates.glob("pr-*.json")):
         row = load(path)
+        candidate_rows[str(path.relative_to(ROOT))] = row
 
         assert row["schema"] == "amadeli.integration-candidate.v1"
         assert row["source_repo"] == SOURCE_REPO
@@ -115,6 +117,21 @@ if promoted_via is not None:
     recovery = recovery_rows[promoted_via]
     assert recovery["merge_commit_sha"] == current["approved_sha"]
     assert recovery["canonical_anchor_sha"] == current["previous_canonical_sha"]
+
+promoted_candidate = current.get("promoted_candidate")
+if promoted_candidate is not None:
+    assert promoted_candidate in candidate_rows, (
+        "current promoted_candidate does not resolve to a candidate record: "
+        f"{promoted_candidate}"
+    )
+    candidate = candidate_rows[promoted_candidate]
+    assert candidate["status"] == "MERGED"
+    assert candidate["merge_commit_sha"] == current["approved_sha"]
+    assert candidate["base_sha"] == current["previous_canonical_sha"]
+
+assert not (promoted_via and promoted_candidate), (
+    "current authority must be promoted by exactly one provenance mode"
+)
 
 print(
     f"AUTHORITY_VALIDATION_PASS "
