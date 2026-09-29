@@ -2,6 +2,8 @@
   "schema": "amadeli.integration-authority.v1",
   "source_repo": "daubesonntag-dotcom01/amadeli-os-canonical",
   "branch": "t15-integration",
-  "approved_sha": "bdfcc5d2afc54fe22de59b61f4ab773ceadc6da2",
+  "approved_sha": "194bd670ecf8814d8254dc0b0ad937240f68b881",
+  "previous_canonical_sha": "bdfcc5d2afc54fe22de59b61f4ab773ceadc6da2",
+  "promoted_via": "authority/recoveries/pr-31.json",
   "status": "CANONICAL"
 }
